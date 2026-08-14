@@ -14,10 +14,12 @@
   --color-text-light: rgb(255, 255, 255);
 }
 /* tag styles */
+html {
+  overflow-x: hidden;
+}
 body {
   background-color: rgb(35, 35, 35);
   font-family: sans-serif;
-  overflow-x: hidden;
 }
 h1,
 h2,
