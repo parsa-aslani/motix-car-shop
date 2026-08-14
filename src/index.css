@@ -228,7 +228,7 @@ p::selection {
 /* facilities */
 .facilities-gsap {
   opacity: 0;
-  transform: translateY(300) scale(0.5);
+  transform: translateY(120) scale(0.7);
 }
 .facilities-title {
   text-align: center;
