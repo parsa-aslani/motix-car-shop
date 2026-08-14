@@ -352,11 +352,13 @@ p::selection {
 /* car categories */
 .car-categories-section {
   margin: 2.5rem auto;
+  overflow: hidden;
 }
 .car-categories-box {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
+  overflow: hidden;
 }
 @media screen and (min-width: 550px) {
   .car-categories-box {
