@@ -21,7 +21,7 @@ const CompanyFacilitiesSection = () => {
       });
       gsap.to(".facility", {
         y: 0,
-        stagger: 0.2,
+        stagger: 0.1,
         ease: "power3.in",
         opacity: 1,
         scale: 1,
@@ -29,7 +29,7 @@ const CompanyFacilitiesSection = () => {
           trigger: ".facility",
           start: "top 75%",
           end: "bottom 40%",
-          scrub: 0.3,
+          scrub: 0.6,
         },
       });
     });
