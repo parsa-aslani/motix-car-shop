@@ -32,7 +32,6 @@ const CarCategoryCard = ({
         src={imgUrl}
         alt={imgAlt}
         className="category-card-img"
-        loading="lazy"
       />
       <div className="category-card-typography">
         <h4 className="category-card-title">{categoryName}</h4>
