@@ -125,7 +125,7 @@ p::selection {
   height: 280px;
   display: flex;
   justify-content: center;
-  margin: 1.5rem auto 4rem 0;
+  margin: 0.5rem auto 6rem 0;
 }
 .header-3d-model {
   position: absolute;
@@ -151,22 +151,22 @@ p::selection {
   transform: translateX(350px);
 }
 .header-description {
-  margin-top: 7rem;
+  margin-top: 2rem;
   width: 75%;
   text-align: center;
 }
 .header-image {
   z-index: -1;
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
   filter: drop-shadow(0px 0px 20px rgb(25, 25, 25));
   opacity: 0;
   margin-top: -15rem;
 }
 .header-car-engine-img {
   top: 75%;
-  right: 10%;
+  right: 45%;
   animation: header-images 12s infinite ease-in-out;
 }
 .header-car-wheel-img {
@@ -175,7 +175,8 @@ p::selection {
   animation: header-images 9s infinite ease-in-out;
 }
 .header-car-pheromone-img {
-  display: none;
+  top: 15%;
+  right: 5%;
   animation: header-images 16s infinite ease-in-out;
 }
 @keyframes header-images {
@@ -192,13 +193,15 @@ p::selection {
 @media screen and (min-width: 500px) {
   .header {
     height: 350px;
-    margin: 0 auto;
   }
   .header-title {
     font-size: 2rem;
   }
 }
 @media screen and (min-width: 600px) {
+  .header-description {
+    margin-top: 3rem;
+  }
   .header-title {
     font-size: 3rem;
   }
@@ -206,14 +209,17 @@ p::selection {
     height: 450px;
   }
   .header-image {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
   }
   .header-car-engine-img {
     right: 30%;
   }
 }
 @media screen and (min-width: 800px) {
+  .header-description {
+    margin-top: 7rem;
+  }
   .header-title {
     font-size: 4rem;
   }
@@ -221,12 +227,8 @@ p::selection {
     width: 155px;
     height: 155px;
   }
-  .header-car-pheromone-img {
-    display: block;
-    width: 140px !important;
-    height: 140px !important;
-    top: 15%;
-    right: 5%;
+  .header {
+    margin: 0 auto;
   }
 }
 /* facilities */

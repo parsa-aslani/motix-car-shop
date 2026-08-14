@@ -1,9 +1,10 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Header3dModel from "../3dComponents/Header3dModel";
 import BackgroundLight from "../BackgroundLight";
 import gsap from "gsap";
 
 const Header = () => {
+  const [show3dModel, setShow3dModel] = useState(false);
   useEffect(() => {
     const gsapAnimations = gsap.context(() => {
       gsap.to(".header-image", {
@@ -24,12 +25,24 @@ const Header = () => {
       gsapAnimations.revert();
     };
   }, []);
+  useEffect(() => {
+    const handleResizeWindow = () => {
+      setShow3dModel(window.innerWidth > 800);
+    };
+    handleResizeWindow();
+    window.addEventListener("resize", handleResizeWindow);
+    return () => {
+      window.removeEventListener("resize", handleResizeWindow);
+    };
+  }, [show3dModel]);
   return (
     <header className="header container">
       <BackgroundLight top={"0%"} bottom={0} left={"75%"} right={0} />
-      <div className="header-3d-model">
-        <Header3dModel />
-      </div>
+      {show3dModel ? (
+        <div className="header-3d-model">
+          <Header3dModel />
+        </div>
+      ) : null}
       <div className="header-texts">
         <h1 className="header-title">BUY FAST AND CHEAP</h1>
         <p className="header-description">
