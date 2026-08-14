@@ -21,20 +21,20 @@ const useTexture_loader = (
   const TextureAO = isTextureHaveAO
     ? useLoader(
         TextureLoader,
-        `/textures/${textureName}_1K-JPG_AmbientOcclusion.jpg`,
+        `./textures/${textureName}_1K-JPG_AmbientOcclusion.jpg`,
       )
     : "";
   const TextureDisp = useLoader(
     TextureLoader,
-    `/textures/${textureName}_1K-JPG_Displacement.jpg`,
+    `./textures/${textureName}_1K-JPG_Displacement.jpg`,
   );
   const TextureRoughness = useLoader(
     TextureLoader,
-    `/textures/${textureName}_1K-JPG_Roughness.jpg`,
+    `./textures/${textureName}_1K-JPG_Roughness.jpg`,
   );
   const TextureNormal = useLoader(
     TextureLoader,
-    `/textures/${textureName}_1K-JPG_NormalGL.jpg`,
+    `./textures/${textureName}_1K-JPG_NormalGL.jpg`,
   );
   return {
     TextureColor,

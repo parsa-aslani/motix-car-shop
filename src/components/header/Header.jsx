@@ -39,17 +39,17 @@ const Header = () => {
         </p>
       </div>
       <img
-        src="../../../public/images/car-engine.png"
+        src="./images/car-engine.png"
         alt="car-engine"
         className="header-image header-car-engine-img"
       />
       <img
-        src="../../../public/images/car-wheel.png"
+        src="./images/car-wheel.png"
         alt="car-engine"
         className="header-image header-car-wheel-img"
       />
       <img
-        src="../../../public/images/car-pheromone.png"
+        src="./images/car-pheromone.png"
         alt="car-pheromone"
         className="header-image header-car-pheromone-img"
       />
