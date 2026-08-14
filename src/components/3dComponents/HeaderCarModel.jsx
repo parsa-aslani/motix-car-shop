@@ -5,14 +5,14 @@ import { MeshoptDecoder } from "three/examples/jsm/libs/meshopt_decoder.module.j
 
 const HeaderCarModel = () => {
   // model
-  const car = useLoader(GLTFLoader, "./models/buggatti.glb", (loader) => {
+  const car = useLoader(GLTFLoader, "./models/bugatti.glb", (loader) => {
     loader.setMeshoptDecoder(MeshoptDecoder);
   });
   useEffect(() => {
     if (car) {
       car.scene.traverse((child) => {
         if (child.isMesh) {
-          child.material.roughness -= 0.5;
+          child.material.roughness -= 0.3;
         }
       });
     }
