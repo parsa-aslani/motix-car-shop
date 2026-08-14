@@ -125,7 +125,7 @@ p::selection {
   height: 280px;
   display: flex;
   justify-content: center;
-  margin: 1.5rem 0;
+  margin: 1.5rem auto;
 }
 .header-3d-model {
   position: absolute;
@@ -192,7 +192,7 @@ p::selection {
 @media screen and (min-width: 500px) {
   .header {
     height: 350px;
-    margin: 0;
+    margin: 0 auto;
   }
   .header-title {
     font-size: 2rem;

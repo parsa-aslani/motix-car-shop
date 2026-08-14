@@ -1,13 +1,13 @@
 import { useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/Addons.js";
 import { useEffect } from "react";
+import { MeshoptDecoder } from "three/examples/jsm/libs/meshopt_decoder.module.js";
 
 const HeaderCarModel = () => {
   // model
-  const car = useLoader(
-    GLTFLoader,
-    "./models/bugatti_tourbillon_2026__www.vecarz.com.glb",
-  );
+  const car = useLoader(GLTFLoader, "./models/buggatti.glb", (loader) => {
+    loader.setMeshoptDecoder(MeshoptDecoder);
+  });
   useEffect(() => {
     if (car) {
       car.scene.traverse((child) => {
