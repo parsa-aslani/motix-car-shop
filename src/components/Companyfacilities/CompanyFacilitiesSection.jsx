@@ -27,9 +27,8 @@ const CompanyFacilitiesSection = () => {
         scale: 1,
         scrollTrigger: {
           trigger: ".facility",
-          start: "top 75%",
-          end: "bottom 40%",
-          scrub: 0.6,
+          ...ScrollTriggerConsts,
+          scrub: 0.4,
         },
       });
     });
